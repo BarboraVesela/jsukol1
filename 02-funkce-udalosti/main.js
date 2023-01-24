@@ -35,9 +35,10 @@ function zobrazVysledek(){
  */
 
 function upozorni() {
-    console.log ("Gratulace, právě jsi spustila tuto funkci!");
-    alert("Gratulace, právě jsi spustila tuto funkci!");
+    alert("Gratulace, právě jsi spustila tuto funkci!")
+    let textAlert = "Gratulace, právě jsi spustila tuto funkci!";
+    console.log(textAlert);
     let ctverecek = document.querySelector('.ctverecek');
-    ctverecek.textContent = "Gratulace, právě jsi spustila tuto funkci!";
+    ctverecek.textContent = textAlert;
     ctverecek.style.fontSize = '8px';
   }
