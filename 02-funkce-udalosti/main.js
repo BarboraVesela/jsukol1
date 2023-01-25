@@ -23,9 +23,9 @@ function secti(a, b) {
   }
 
 function zobrazVysledek(){
-    document.querySelector("#vysledek").innerHTML = secti(4, 5);
+    let text = "Tady bude výsledek: ";
+    document.querySelector("#vysledek").innerHTML = text + secti(4, 5);
 }
-
 
 
 /*Uprav funkci upozorni() tak, aby se navíc vypisoval text i do konzole a také nahradil text v elementu Čtvereček*/
@@ -34,7 +34,7 @@ function zobrazVysledek(){
  * Upozorní uživatele při spuštění.
  */
 
-function upozorni() {
+function zobrazHlasku() {
     alert("Gratulace, právě jsi spustila tuto funkci!")
     let textAlert = "Gratulace, právě jsi spustila tuto funkci!";
     console.log(textAlert);
